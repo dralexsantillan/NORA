@@ -1,0 +1,1042 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Caso interactivo NORA – Crisis y factor humano (sin JavaScript)</title>
+<style>
+  :root { color-scheme: dark; }
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#020617;color:#e5e7eb;}
+  .app{max-width:980px;margin:0 auto;padding:16px 14px 28px;}
+  h1{font-size:1.35rem;margin:8px 0 6px;color:#f9fafb;}
+  .subtitle{color:#9ca3af;font-size:.95rem;line-height:1.4;margin-bottom:12px;}
+  .card{border:1px solid #1f2937;border-radius:16px;padding:16px 14px 18px;background:#020617;box-shadow:0 18px 40px rgba(0,0,0,.55);}
+  .tag{display:inline-flex;gap:8px;align-items:center;border:1px solid #1f2937;border-radius:999px;padding:4px 10px;color:#9ca3af;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;}
+  h2{margin:6px 0 10px;font-size:1.15rem;}
+  .text{white-space:pre-line;line-height:1.65;font-size:.98rem;color:#e5e7eb;}
+  .choices{display:flex;flex-direction:column;gap:10px;margin-top:14px;}
+  a.choice{text-decoration:none;color:#e5e7eb;border:1px solid #1f2937;border-radius:999px;padding:10px 12px;background:#0b1120;display:block;}
+  a.choice:active{transform:translateY(1px);}
+  .meta{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 12px;color:#9ca3af;font-size:.82rem;}
+  .pill{border:1px solid #1f2937;border-radius:999px;padding:5px 10px;}
+  .footer{color:#6b7280;font-size:.82rem;margin-top:14px;border-top:1px dashed #1f2937;padding-top:12px;}
+  .node{display:none;}
+  .node:target{display:block;}
+  #inicio{display:block;}
+  :target ~ #inicio{display:none;}
+  a.choice:focus{outline:2px solid #9ca3af;outline-offset:2px;}
+</style>
+</head>
+<body>
+<div class="app">
+  <h1>Caso interactivo: Crisis en NORA y factor humano</h1>
+  <div class="subtitle">Versión compatible sin JavaScript. La retroalimentación aparece únicamente al final y depende del recorrido.</div>
+
+
+  <section id="inicio" class="node">
+    <div class="card">
+      <div class="tag">NORA · Inicio</div>
+      <div class="meta"><div class="pill">Ubicación: Radiología intervencionista</div><div class="pill">Plan: Sedación</div><div class="pill">Acceso: Condicionado por entorno</div></div>
+      <h2>Inicio del caso</h2>
+      <div class="text">Estás en Radiología intervencionista (anestesia fuera de quirófano). Paciente masculino 58 años, IMC 34, ronca al dormir (posible apnea obstructiva del sueño), hipertensión controlada. Procedimiento: embolización (duración estimada 90 minutos). Sedación con propofol y analgesia titulada. El acceso a la cabeza está parcialmente condicionado por el arco en C, cables y campos.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s1_A">A) Antes de iniciar, realizas una preparación breve del equipo: roles, plan general y verificación rápida de recursos (oxígeno, succión, material de vía aérea).</a>
+<a class="choice" href="#s1_B">B) Inicias el procedimiento y estableces la preparación en paralelo: confirmas recursos y coordinación conforme avanza la sedación.</a>
+<div class="footer">Nota técnica: esta versión usa navegación por enlaces internos para funcionar en vista previa de iOS/Android.</div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s1_A" class="node">
+    <div class="card">
+      <div class="tag">NORA · Evolución</div>
+      <div class="meta"><div class="pill">Momento: Minuto 18</div><div class="pill">Enfoque: Sedación y ventilación</div></div>
+      <h2>Ventilación irregular y solicitud de mayor sedación</h2>
+      <div class="text">Minuto 18. El paciente comienza a roncar. La capnografía muestra ventilación irregular y el paciente presenta movimiento durante una maniobra del procedimiento. El operador solicita mayor profundidad de sedación.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s2_A_A">A) Priorizar estabilidad ventilatoria antes de profundizar: ajustar sedación, reposicionar y solicitar una pausa breve para optimizar ventilación.</a>
+<a class="choice" href="#s2_A_B">B) Priorizar inmovilidad del campo: incrementar sedación de forma titulada y mantener vigilancia estrecha de ventilación y saturación.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s1_B" class="node">
+    <div class="card">
+      <div class="tag">NORA · Evolución</div>
+      <div class="meta"><div class="pill">Momento: Minuto 18</div><div class="pill">Enfoque: Sedación y ventilación</div></div>
+      <h2>Ventilación irregular y solicitud de mayor sedación</h2>
+      <div class="text">Minuto 18. El paciente comienza a roncar. La capnografía muestra ventilación irregular y el paciente presenta movimiento durante una maniobra del procedimiento. El operador solicita mayor profundidad de sedación.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s2_B_A">A) Priorizar estabilidad ventilatoria antes de profundizar: ajustar sedación, reposicionar y solicitar una pausa breve para optimizar ventilación.</a>
+<a class="choice" href="#s2_B_B">B) Priorizar inmovilidad del campo: incrementar sedación de forma titulada y mantener vigilancia estrecha de ventilación y saturación.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s2_A_A" class="node">
+    <div class="card">
+      <div class="tag">NORA · Deterioro</div>
+      <div class="meta"><div class="pill">Momento: Minuto 21</div><div class="pill">Acceso: Limitado por arco en C</div><div class="pill">SpO₂: 86% → 82%</div></div>
+      <h2>Desaturación y acceso condicionado</h2>
+      <div class="text">Minuto 21. La saturación disminuye rápidamente y la capnografía se aplana de forma intermitente. El arco en C limita el acceso a la cabeza. El técnico comenta que retirar o mover el arco tarda aproximadamente 20 segundos.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s3_A_A_A">A) Solicitar pausa y retiro del arco en C para mejorar acceso; coordinar acciones simultáneas para manejo de ventilación.</a>
+<a class="choice" href="#s3_A_A_B">B) Iniciar maniobras de ventilación con el acceso disponible mientras el equipo prepara el retiro del arco en C.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s3_A_A_A" class="node">
+    <div class="card">
+      <div class="tag">NORA · Rescate</div>
+      <div class="meta"><div class="pill">Momento: Minuto 22</div><div class="pill">SpO₂: 79%–82%</div><div class="pill">Capnografía: baja</div></div>
+      <h2>Ventilación con mascarilla: resistencia y fuga</h2>
+      <div class="text">Minuto 22. Ya con mejor acceso. La ventilación con mascarilla presenta resistencia y fuga. La elevación torácica es discreta. El ambiente es ruidoso y la auscultación no es sencilla.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s4_A_A">A) Optimizar ventilación con pasos secuenciales: técnica a dos manos, adyuvante de vía aérea (si aplica), presión positiva y reevaluación inmediata.</a>
+<a class="choice" href="#s4_A_A_b">B) Preparar escalamiento a una estrategia más definitiva de vía aérea, manteniendo intentos de ventilación mientras se organiza el equipo.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s3_A_A_B" class="node">
+    <div class="card">
+      <div class="tag">NORA · Rescate</div>
+      <div class="meta"><div class="pill">Momento: Minuto 22</div><div class="pill">SpO₂: 79%–82%</div><div class="pill">Capnografía: baja</div></div>
+      <h2>Ventilación con mascarilla: resistencia y fuga</h2>
+      <div class="text">Minuto 22. Ya con mejor acceso. La ventilación con mascarilla presenta resistencia y fuga. La elevación torácica es discreta. El ambiente es ruidoso y la auscultación no es sencilla.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s4_A_A">A) Optimizar ventilación con pasos secuenciales: técnica a dos manos, adyuvante de vía aérea (si aplica), presión positiva y reevaluación inmediata.</a>
+<a class="choice" href="#s4_A_A_b">B) Preparar escalamiento a una estrategia más definitiva de vía aérea, manteniendo intentos de ventilación mientras se organiza el equipo.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s4_A_A" class="node">
+    <div class="card">
+      <div class="tag">NORA · Decisión operativa</div>
+      <div class="meta"><div class="pill">Momento: Minuto 23</div><div class="pill">SpO₂: 88% → 92%</div><div class="pill">Capnografía: presente</div></div>
+      <h2>Mejoría parcial y negociación para continuar</h2>
+      <div class="text">Minuto 23. La ventilación mejora parcialmente y la saturación asciende. El operador pregunta si pueden continuar porque están en un paso crítico del procedimiento.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s5_A_A">A) Definir condiciones para reanudar (ventilación y saturación sostenidas) y ajustes del plan antes de continuar.</a>
+<a class="choice" href="#s5_A_A_b">B) Reanudar con vigilancia estrecha, manteniendo disponibilidad inmediata de medidas de rescate si hay deterioro.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s4_A_A_b" class="node">
+    <div class="card">
+      <div class="tag">NORA · Decisión operativa</div>
+      <div class="meta"><div class="pill">Momento: Minuto 23</div><div class="pill">SpO₂: 88% → 92%</div><div class="pill">Capnografía: presente</div></div>
+      <h2>Mejoría parcial y negociación para continuar</h2>
+      <div class="text">Minuto 23. La ventilación mejora parcialmente y la saturación asciende. El operador pregunta si pueden continuar porque están en un paso crítico del procedimiento.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s5_A_A">A) Definir condiciones para reanudar (ventilación y saturación sostenidas) y ajustes del plan antes de continuar.</a>
+<a class="choice" href="#s5_A_A_b">B) Reanudar con vigilancia estrecha, manteniendo disponibilidad inmediata de medidas de rescate si hay deterioro.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s5_A_A" class="node">
+    <div class="card">
+      <div class="tag">NORA · Recurrencia</div>
+      <div class="meta"><div class="pill">Momento: Minuto 27</div><div class="pill">SpO₂: 92% → 88%</div><div class="pill">Capnografía: disminuye</div></div>
+      <h2>Reaparición de ronquido y deterioro ventilatorio</h2>
+      <div class="text">Minuto 27. Al reanudar, el paciente vuelve a roncar; la capnografía disminuye y la saturación cae nuevamente. El acceso sigue condicionado por el entorno.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s6_A_A">A) Modificar el plan hacia mayor control ventilatorio (por ejemplo, asegurar vía aérea con dispositivo supraglótico) con una pausa coordinada.</a>
+<a class="choice" href="#s6_A_A_b">B) Continuar con soporte ventilatorio intermitente y ajustes finos de sedación, manteniendo umbrales de intervención.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s5_A_A_b" class="node">
+    <div class="card">
+      <div class="tag">NORA · Recurrencia</div>
+      <div class="meta"><div class="pill">Momento: Minuto 27</div><div class="pill">SpO₂: 92% → 88%</div><div class="pill">Capnografía: disminuye</div></div>
+      <h2>Reaparición de ronquido y deterioro ventilatorio</h2>
+      <div class="text">Minuto 27. Al reanudar, el paciente vuelve a roncar; la capnografía disminuye y la saturación cae nuevamente. El acceso sigue condicionado por el entorno.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s6_A_A">A) Modificar el plan hacia mayor control ventilatorio (por ejemplo, asegurar vía aérea con dispositivo supraglótico) con una pausa coordinada.</a>
+<a class="choice" href="#s6_A_A_b">B) Continuar con soporte ventilatorio intermitente y ajustes finos de sedación, manteniendo umbrales de intervención.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s6_A_A" class="node">
+    <div class="card">
+      <div class="tag">NORA · Crisis</div>
+      <div class="meta"><div class="pill">Momento: Minuto 29</div><div class="pill">SpO₂: 78% → 74%</div><div class="pill">PANI: 82/48</div></div>
+      <h2>Deterioro combinado y desorganización del entorno</h2>
+      <div class="text">Minuto 29. El cuadro progresa: desaparece la capnografía y la saturación cae. La presión arterial disminuye. Varias personas hablan al mismo tiempo y el entorno se vuelve desorganizado.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s7_A_A_A">A) Estructurar la respuesta: declarar crisis, asignar roles y establecer comunicación dirigida con objetivos inmediatos.</a>
+<a class="choice" href="#s7_A_A_B">B) Enfocar la intervención clínica principal y solicitar apoyo conforme se va integrando el equipo.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s6_A_A_b" class="node">
+    <div class="card">
+      <div class="tag">NORA · Crisis</div>
+      <div class="meta"><div class="pill">Momento: Minuto 29</div><div class="pill">SpO₂: 78% → 74%</div><div class="pill">PANI: 82/48</div></div>
+      <h2>Deterioro combinado y desorganización del entorno</h2>
+      <div class="text">Minuto 29. El cuadro progresa: desaparece la capnografía y la saturación cae. La presión arterial disminuye. Varias personas hablan al mismo tiempo y el entorno se vuelve desorganizado.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s7_A_A_A">A) Estructurar la respuesta: declarar crisis, asignar roles y establecer comunicación dirigida con objetivos inmediatos.</a>
+<a class="choice" href="#s7_A_A_B">B) Enfocar la intervención clínica principal y solicitar apoyo conforme se va integrando el equipo.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s7_A_A_A" class="node">
+    <div class="card">
+      <div class="tag">NORA · Decisión final</div>
+      <div class="meta"><div class="pill">Momento: Minuto 30</div><div class="pill">SpO₂: 80% → 86%</div><div class="pill">Capnografía: baja</div></div>
+      <h2>Recuperación parcial y decisión operativa</h2>
+      <div class="text">Minuto 30. Se recupera ventilación parcial y reaparece capnografía débil. El operador pregunta si debe cancelar. El equipo espera tu decisión operativa.</div>
+      <div class="choices">
+        
+<a class="choice" href="#fin_A_A_A_A">A) Suspender temporalmente y priorizar estabilización completa; considerar cambio de entorno (por ejemplo, traslado a quirófano o recuperación avanzada).</a>
+<a class="choice" href="#fin_A_A_A_B">B) Continuar con vigilancia intensiva y manejo simultáneo, manteniendo disponibilidad de rescate y criterios de suspensión si reaparece deterioro.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="fin_A_A_A_A" class="node">
+    <div class="card">
+      <div class="tag">Debriefing · Retroalimentación final</div>
+      <div class="meta"><div class="pill">Recorrido: A-A-A-A</div><div class="pill">Enfoque: manejo de crisis</div><div class="pill">Enfoque: factor humano</div></div>
+      <h2>Cierre del escenario</h2>
+      <div class="text">Desenlace: se decide suspender temporalmente y priorizar estabilización completa, con consideración de cambio de entorno para manejo con mejor acceso y recursos.<br><br>Retroalimentación (manejo de crisis y factor humano):<br>• Preparación previa: acordar roles y verificar recursos antes de iniciar favorece coordinación y reduce latencia cuando aparece deterioro.<br>• Priorización temprana de ventilación: detenerse para optimizar ventilación puede prevenir una escalada a rescate complejo en un entorno con acceso limitado.<br>• Organización del equipo durante la crisis: declarar crisis, asignar tareas y comunicación dirigida reduce ruido operativo y permite acciones simultáneas (ventilación, fármacos, monitorización y coordinación con el procedimiento).<br>• Decisión operativa: suspender temporalmente y considerar cambio de entorno es una estrategia de control del riesgo cuando persiste fragilidad ventilatoria o limitaciones del entorno.<br>• Transferencia a la práctica: en NORA, el control del entorno (acceso a la vía aérea, disposición del equipo, manejo del ruido) es tan relevante como la intervención clínica.<br><br>Lectura de decisiones (compensaciones):<br>• Tiempo vs preparación: elegir preparación previa o en paralelo cambia la carga cognitiva disponible cuando ocurre la crisis.<br>• Inmovilidad vs ventilación: el equilibrio depende del momento del procedimiento y de la capacidad real de rescate inmediato.<br>• Continuidad vs cambio de plan/entorno: depende del riesgo residual y de la capacidad del equipo para sostener ventilación y hemodinamia.<br><br>Pregunta para pensamiento crítico:<br>¿Qué tres umbrales operativos (oxigenación, ventilación y condiciones del entorno/recursos) definirías para reanudar y para suspender, y cómo los comunicarías en menos de 15 segundos?</div>
+      <div class="choices">
+        <a class="choice" href="#inicio">Reiniciar el caso</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="fin_A_A_A_B" class="node">
+    <div class="card">
+      <div class="tag">Debriefing · Retroalimentación final</div>
+      <div class="meta"><div class="pill">Recorrido: A-A-A-B</div><div class="pill">Enfoque: manejo de crisis</div><div class="pill">Enfoque: factor humano</div></div>
+      <h2>Cierre del escenario</h2>
+      <div class="text">Desenlace: se decide continuar con vigilancia intensiva y manejo simultáneo, manteniendo disponibilidad de rescate y criterios explícitos de suspensión si reaparece deterioro.<br><br>Retroalimentación (manejo de crisis y factor humano):<br>• Preparación previa: acordar roles y verificar recursos antes de iniciar favorece coordinación y reduce latencia cuando aparece deterioro.<br>• Priorización temprana de ventilación: detenerse para optimizar ventilación puede prevenir una escalada a rescate complejo en un entorno con acceso limitado.<br>• Organización del equipo durante la crisis: declarar crisis, asignar tareas y comunicación dirigida reduce ruido operativo y permite acciones simultáneas (ventilación, fármacos, monitorización y coordinación con el procedimiento).<br>• Decisión operativa: continuar con vigilancia intensiva requiere redundancias (personal/material), ciclos cortos de reevaluación y un criterio explícito de suspensión ante cualquier deterioro.<br>• Transferencia a la práctica: en NORA, el control del entorno (acceso a la vía aérea, disposición del equipo, manejo del ruido) es tan relevante como la intervención clínica.<br><br>Lectura de decisiones (compensaciones):<br>• Tiempo vs preparación: elegir preparación previa o en paralelo cambia la carga cognitiva disponible cuando ocurre la crisis.<br>• Inmovilidad vs ventilación: el equilibrio depende del momento del procedimiento y de la capacidad real de rescate inmediato.<br>• Continuidad vs cambio de plan/entorno: depende del riesgo residual y de la capacidad del equipo para sostener ventilación y hemodinamia.<br><br>Pregunta para pensamiento crítico:<br>¿Qué tres umbrales operativos (oxigenación, ventilación y condiciones del entorno/recursos) definirías para reanudar y para suspender, y cómo los comunicarías en menos de 15 segundos?</div>
+      <div class="choices">
+        <a class="choice" href="#inicio">Reiniciar el caso</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s7_A_A_B" class="node">
+    <div class="card">
+      <div class="tag">NORA · Decisión final</div>
+      <div class="meta"><div class="pill">Momento: Minuto 30</div><div class="pill">SpO₂: 80% → 86%</div><div class="pill">Capnografía: baja</div></div>
+      <h2>Recuperación parcial y decisión operativa</h2>
+      <div class="text">Minuto 30. Se recupera ventilación parcial y reaparece capnografía débil. El operador pregunta si debe cancelar. El equipo espera tu decisión operativa.</div>
+      <div class="choices">
+        
+<a class="choice" href="#fin_A_A_B_A">A) Suspender temporalmente y priorizar estabilización completa; considerar cambio de entorno (por ejemplo, traslado a quirófano o recuperación avanzada).</a>
+<a class="choice" href="#fin_A_A_B_B">B) Continuar con vigilancia intensiva y manejo simultáneo, manteniendo disponibilidad de rescate y criterios de suspensión si reaparece deterioro.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="fin_A_A_B_A" class="node">
+    <div class="card">
+      <div class="tag">Debriefing · Retroalimentación final</div>
+      <div class="meta"><div class="pill">Recorrido: A-A-B-A</div><div class="pill">Enfoque: manejo de crisis</div><div class="pill">Enfoque: factor humano</div></div>
+      <h2>Cierre del escenario</h2>
+      <div class="text">Desenlace: se decide suspender temporalmente y priorizar estabilización completa, con consideración de cambio de entorno para manejo con mejor acceso y recursos.<br><br>Retroalimentación (manejo de crisis y factor humano):<br>• Preparación previa: acordar roles y verificar recursos antes de iniciar favorece coordinación y reduce latencia cuando aparece deterioro.<br>• Priorización temprana de ventilación: detenerse para optimizar ventilación puede prevenir una escalada a rescate complejo en un entorno con acceso limitado.<br>• Enfoque clínico principal con apoyo progresivo: puede ser eficaz, pero conviene evitar vacíos en monitorización/tiempos/comunicación; una instrucción breve y dirigida puede recuperar estructura sin frenar la intervención.<br>• Decisión operativa: suspender temporalmente y considerar cambio de entorno es una estrategia de control del riesgo cuando persiste fragilidad ventilatoria o limitaciones del entorno.<br>• Transferencia a la práctica: en NORA, el control del entorno (acceso a la vía aérea, disposición del equipo, manejo del ruido) es tan relevante como la intervención clínica.<br><br>Lectura de decisiones (compensaciones):<br>• Tiempo vs preparación: elegir preparación previa o en paralelo cambia la carga cognitiva disponible cuando ocurre la crisis.<br>• Inmovilidad vs ventilación: el equilibrio depende del momento del procedimiento y de la capacidad real de rescate inmediato.<br>• Continuidad vs cambio de plan/entorno: depende del riesgo residual y de la capacidad del equipo para sostener ventilación y hemodinamia.<br><br>Pregunta para pensamiento crítico:<br>¿Qué tres umbrales operativos (oxigenación, ventilación y condiciones del entorno/recursos) definirías para reanudar y para suspender, y cómo los comunicarías en menos de 15 segundos?</div>
+      <div class="choices">
+        <a class="choice" href="#inicio">Reiniciar el caso</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="fin_A_A_B_B" class="node">
+    <div class="card">
+      <div class="tag">Debriefing · Retroalimentación final</div>
+      <div class="meta"><div class="pill">Recorrido: A-A-B-B</div><div class="pill">Enfoque: manejo de crisis</div><div class="pill">Enfoque: factor humano</div></div>
+      <h2>Cierre del escenario</h2>
+      <div class="text">Desenlace: se decide continuar con vigilancia intensiva y manejo simultáneo, manteniendo disponibilidad de rescate y criterios explícitos de suspensión si reaparece deterioro.<br><br>Retroalimentación (manejo de crisis y factor humano):<br>• Preparación previa: acordar roles y verificar recursos antes de iniciar favorece coordinación y reduce latencia cuando aparece deterioro.<br>• Priorización temprana de ventilación: detenerse para optimizar ventilación puede prevenir una escalada a rescate complejo en un entorno con acceso limitado.<br>• Enfoque clínico principal con apoyo progresivo: puede ser eficaz, pero conviene evitar vacíos en monitorización/tiempos/comunicación; una instrucción breve y dirigida puede recuperar estructura sin frenar la intervención.<br>• Decisión operativa: continuar con vigilancia intensiva requiere redundancias (personal/material), ciclos cortos de reevaluación y un criterio explícito de suspensión ante cualquier deterioro.<br>• Transferencia a la práctica: en NORA, el control del entorno (acceso a la vía aérea, disposición del equipo, manejo del ruido) es tan relevante como la intervención clínica.<br><br>Lectura de decisiones (compensaciones):<br>• Tiempo vs preparación: elegir preparación previa o en paralelo cambia la carga cognitiva disponible cuando ocurre la crisis.<br>• Inmovilidad vs ventilación: el equilibrio depende del momento del procedimiento y de la capacidad real de rescate inmediato.<br>• Continuidad vs cambio de plan/entorno: depende del riesgo residual y de la capacidad del equipo para sostener ventilación y hemodinamia.<br><br>Pregunta para pensamiento crítico:<br>¿Qué tres umbrales operativos (oxigenación, ventilación y condiciones del entorno/recursos) definirías para reanudar y para suspender, y cómo los comunicarías en menos de 15 segundos?</div>
+      <div class="choices">
+        <a class="choice" href="#inicio">Reiniciar el caso</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s2_A_B" class="node">
+    <div class="card">
+      <div class="tag">NORA · Deterioro</div>
+      <div class="meta"><div class="pill">Momento: Minuto 21</div><div class="pill">Acceso: Limitado por arco en C</div><div class="pill">SpO₂: 86% → 82%</div></div>
+      <h2>Desaturación y acceso condicionado</h2>
+      <div class="text">Minuto 21. La saturación disminuye rápidamente y la capnografía se aplana de forma intermitente. El arco en C limita el acceso a la cabeza. El técnico comenta que retirar o mover el arco tarda aproximadamente 20 segundos.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s3_A_B_A">A) Solicitar pausa y retiro del arco en C para mejorar acceso; coordinar acciones simultáneas para manejo de ventilación.</a>
+<a class="choice" href="#s3_A_B_B">B) Iniciar maniobras de ventilación con el acceso disponible mientras el equipo prepara el retiro del arco en C.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s3_A_B_A" class="node">
+    <div class="card">
+      <div class="tag">NORA · Rescate</div>
+      <div class="meta"><div class="pill">Momento: Minuto 22</div><div class="pill">SpO₂: 79%–82%</div><div class="pill">Capnografía: baja</div></div>
+      <h2>Ventilación con mascarilla: resistencia y fuga</h2>
+      <div class="text">Minuto 22. Ya con mejor acceso. La ventilación con mascarilla presenta resistencia y fuga. La elevación torácica es discreta. El ambiente es ruidoso y la auscultación no es sencilla.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s4_A_B">A) Optimizar ventilación con pasos secuenciales: técnica a dos manos, adyuvante de vía aérea (si aplica), presión positiva y reevaluación inmediata.</a>
+<a class="choice" href="#s4_A_B_b">B) Preparar escalamiento a una estrategia más definitiva de vía aérea, manteniendo intentos de ventilación mientras se organiza el equipo.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s3_A_B_B" class="node">
+    <div class="card">
+      <div class="tag">NORA · Rescate</div>
+      <div class="meta"><div class="pill">Momento: Minuto 22</div><div class="pill">SpO₂: 79%–82%</div><div class="pill">Capnografía: baja</div></div>
+      <h2>Ventilación con mascarilla: resistencia y fuga</h2>
+      <div class="text">Minuto 22. Ya con mejor acceso. La ventilación con mascarilla presenta resistencia y fuga. La elevación torácica es discreta. El ambiente es ruidoso y la auscultación no es sencilla.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s4_A_B">A) Optimizar ventilación con pasos secuenciales: técnica a dos manos, adyuvante de vía aérea (si aplica), presión positiva y reevaluación inmediata.</a>
+<a class="choice" href="#s4_A_B_b">B) Preparar escalamiento a una estrategia más definitiva de vía aérea, manteniendo intentos de ventilación mientras se organiza el equipo.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s4_A_B" class="node">
+    <div class="card">
+      <div class="tag">NORA · Decisión operativa</div>
+      <div class="meta"><div class="pill">Momento: Minuto 23</div><div class="pill">SpO₂: 88% → 92%</div><div class="pill">Capnografía: presente</div></div>
+      <h2>Mejoría parcial y negociación para continuar</h2>
+      <div class="text">Minuto 23. La ventilación mejora parcialmente y la saturación asciende. El operador pregunta si pueden continuar porque están en un paso crítico del procedimiento.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s5_A_B">A) Definir condiciones para reanudar (ventilación y saturación sostenidas) y ajustes del plan antes de continuar.</a>
+<a class="choice" href="#s5_A_B_b">B) Reanudar con vigilancia estrecha, manteniendo disponibilidad inmediata de medidas de rescate si hay deterioro.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s4_A_B_b" class="node">
+    <div class="card">
+      <div class="tag">NORA · Decisión operativa</div>
+      <div class="meta"><div class="pill">Momento: Minuto 23</div><div class="pill">SpO₂: 88% → 92%</div><div class="pill">Capnografía: presente</div></div>
+      <h2>Mejoría parcial y negociación para continuar</h2>
+      <div class="text">Minuto 23. La ventilación mejora parcialmente y la saturación asciende. El operador pregunta si pueden continuar porque están en un paso crítico del procedimiento.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s5_A_B">A) Definir condiciones para reanudar (ventilación y saturación sostenidas) y ajustes del plan antes de continuar.</a>
+<a class="choice" href="#s5_A_B_b">B) Reanudar con vigilancia estrecha, manteniendo disponibilidad inmediata de medidas de rescate si hay deterioro.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s5_A_B" class="node">
+    <div class="card">
+      <div class="tag">NORA · Recurrencia</div>
+      <div class="meta"><div class="pill">Momento: Minuto 27</div><div class="pill">SpO₂: 92% → 88%</div><div class="pill">Capnografía: disminuye</div></div>
+      <h2>Reaparición de ronquido y deterioro ventilatorio</h2>
+      <div class="text">Minuto 27. Al reanudar, el paciente vuelve a roncar; la capnografía disminuye y la saturación cae nuevamente. El acceso sigue condicionado por el entorno.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s6_A_B">A) Modificar el plan hacia mayor control ventilatorio (por ejemplo, asegurar vía aérea con dispositivo supraglótico) con una pausa coordinada.</a>
+<a class="choice" href="#s6_A_B_b">B) Continuar con soporte ventilatorio intermitente y ajustes finos de sedación, manteniendo umbrales de intervención.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s5_A_B_b" class="node">
+    <div class="card">
+      <div class="tag">NORA · Recurrencia</div>
+      <div class="meta"><div class="pill">Momento: Minuto 27</div><div class="pill">SpO₂: 92% → 88%</div><div class="pill">Capnografía: disminuye</div></div>
+      <h2>Reaparición de ronquido y deterioro ventilatorio</h2>
+      <div class="text">Minuto 27. Al reanudar, el paciente vuelve a roncar; la capnografía disminuye y la saturación cae nuevamente. El acceso sigue condicionado por el entorno.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s6_A_B">A) Modificar el plan hacia mayor control ventilatorio (por ejemplo, asegurar vía aérea con dispositivo supraglótico) con una pausa coordinada.</a>
+<a class="choice" href="#s6_A_B_b">B) Continuar con soporte ventilatorio intermitente y ajustes finos de sedación, manteniendo umbrales de intervención.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s6_A_B" class="node">
+    <div class="card">
+      <div class="tag">NORA · Crisis</div>
+      <div class="meta"><div class="pill">Momento: Minuto 29</div><div class="pill">SpO₂: 78% → 74%</div><div class="pill">PANI: 82/48</div></div>
+      <h2>Deterioro combinado y desorganización del entorno</h2>
+      <div class="text">Minuto 29. El cuadro progresa: desaparece la capnografía y la saturación cae. La presión arterial disminuye. Varias personas hablan al mismo tiempo y el entorno se vuelve desorganizado.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s7_A_B_A">A) Estructurar la respuesta: declarar crisis, asignar roles y establecer comunicación dirigida con objetivos inmediatos.</a>
+<a class="choice" href="#s7_A_B_B">B) Enfocar la intervención clínica principal y solicitar apoyo conforme se va integrando el equipo.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s6_A_B_b" class="node">
+    <div class="card">
+      <div class="tag">NORA · Crisis</div>
+      <div class="meta"><div class="pill">Momento: Minuto 29</div><div class="pill">SpO₂: 78% → 74%</div><div class="pill">PANI: 82/48</div></div>
+      <h2>Deterioro combinado y desorganización del entorno</h2>
+      <div class="text">Minuto 29. El cuadro progresa: desaparece la capnografía y la saturación cae. La presión arterial disminuye. Varias personas hablan al mismo tiempo y el entorno se vuelve desorganizado.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s7_A_B_A">A) Estructurar la respuesta: declarar crisis, asignar roles y establecer comunicación dirigida con objetivos inmediatos.</a>
+<a class="choice" href="#s7_A_B_B">B) Enfocar la intervención clínica principal y solicitar apoyo conforme se va integrando el equipo.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s7_A_B_A" class="node">
+    <div class="card">
+      <div class="tag">NORA · Decisión final</div>
+      <div class="meta"><div class="pill">Momento: Minuto 30</div><div class="pill">SpO₂: 80% → 86%</div><div class="pill">Capnografía: baja</div></div>
+      <h2>Recuperación parcial y decisión operativa</h2>
+      <div class="text">Minuto 30. Se recupera ventilación parcial y reaparece capnografía débil. El operador pregunta si debe cancelar. El equipo espera tu decisión operativa.</div>
+      <div class="choices">
+        
+<a class="choice" href="#fin_A_B_A_A">A) Suspender temporalmente y priorizar estabilización completa; considerar cambio de entorno (por ejemplo, traslado a quirófano o recuperación avanzada).</a>
+<a class="choice" href="#fin_A_B_A_B">B) Continuar con vigilancia intensiva y manejo simultáneo, manteniendo disponibilidad de rescate y criterios de suspensión si reaparece deterioro.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="fin_A_B_A_A" class="node">
+    <div class="card">
+      <div class="tag">Debriefing · Retroalimentación final</div>
+      <div class="meta"><div class="pill">Recorrido: A-B-A-A</div><div class="pill">Enfoque: manejo de crisis</div><div class="pill">Enfoque: factor humano</div></div>
+      <h2>Cierre del escenario</h2>
+      <div class="text">Desenlace: se decide suspender temporalmente y priorizar estabilización completa, con consideración de cambio de entorno para manejo con mejor acceso y recursos.<br><br>Retroalimentación (manejo de crisis y factor humano):<br>• Preparación previa: acordar roles y verificar recursos antes de iniciar favorece coordinación y reduce latencia cuando aparece deterioro.<br>• Profundización titulada con vigilancia: cuando la inmovilidad es prioritaria, la seguridad depende de anticipar el rescate (oxígeno, succión, material y umbrales claros).<br>• Organización del equipo durante la crisis: declarar crisis, asignar tareas y comunicación dirigida reduce ruido operativo y permite acciones simultáneas (ventilación, fármacos, monitorización y coordinación con el procedimiento).<br>• Decisión operativa: suspender temporalmente y considerar cambio de entorno es una estrategia de control del riesgo cuando persiste fragilidad ventilatoria o limitaciones del entorno.<br>• Transferencia a la práctica: en NORA, el control del entorno (acceso a la vía aérea, disposición del equipo, manejo del ruido) es tan relevante como la intervención clínica.<br><br>Lectura de decisiones (compensaciones):<br>• Tiempo vs preparación: elegir preparación previa o en paralelo cambia la carga cognitiva disponible cuando ocurre la crisis.<br>• Inmovilidad vs ventilación: el equilibrio depende del momento del procedimiento y de la capacidad real de rescate inmediato.<br>• Continuidad vs cambio de plan/entorno: depende del riesgo residual y de la capacidad del equipo para sostener ventilación y hemodinamia.<br><br>Pregunta para pensamiento crítico:<br>¿Qué tres umbrales operativos (oxigenación, ventilación y condiciones del entorno/recursos) definirías para reanudar y para suspender, y cómo los comunicarías en menos de 15 segundos?</div>
+      <div class="choices">
+        <a class="choice" href="#inicio">Reiniciar el caso</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="fin_A_B_A_B" class="node">
+    <div class="card">
+      <div class="tag">Debriefing · Retroalimentación final</div>
+      <div class="meta"><div class="pill">Recorrido: A-B-A-B</div><div class="pill">Enfoque: manejo de crisis</div><div class="pill">Enfoque: factor humano</div></div>
+      <h2>Cierre del escenario</h2>
+      <div class="text">Desenlace: se decide continuar con vigilancia intensiva y manejo simultáneo, manteniendo disponibilidad de rescate y criterios explícitos de suspensión si reaparece deterioro.<br><br>Retroalimentación (manejo de crisis y factor humano):<br>• Preparación previa: acordar roles y verificar recursos antes de iniciar favorece coordinación y reduce latencia cuando aparece deterioro.<br>• Profundización titulada con vigilancia: cuando la inmovilidad es prioritaria, la seguridad depende de anticipar el rescate (oxígeno, succión, material y umbrales claros).<br>• Organización del equipo durante la crisis: declarar crisis, asignar tareas y comunicación dirigida reduce ruido operativo y permite acciones simultáneas (ventilación, fármacos, monitorización y coordinación con el procedimiento).<br>• Decisión operativa: continuar con vigilancia intensiva requiere redundancias (personal/material), ciclos cortos de reevaluación y un criterio explícito de suspensión ante cualquier deterioro.<br>• Transferencia a la práctica: en NORA, el control del entorno (acceso a la vía aérea, disposición del equipo, manejo del ruido) es tan relevante como la intervención clínica.<br><br>Lectura de decisiones (compensaciones):<br>• Tiempo vs preparación: elegir preparación previa o en paralelo cambia la carga cognitiva disponible cuando ocurre la crisis.<br>• Inmovilidad vs ventilación: el equilibrio depende del momento del procedimiento y de la capacidad real de rescate inmediato.<br>• Continuidad vs cambio de plan/entorno: depende del riesgo residual y de la capacidad del equipo para sostener ventilación y hemodinamia.<br><br>Pregunta para pensamiento crítico:<br>¿Qué tres umbrales operativos (oxigenación, ventilación y condiciones del entorno/recursos) definirías para reanudar y para suspender, y cómo los comunicarías en menos de 15 segundos?</div>
+      <div class="choices">
+        <a class="choice" href="#inicio">Reiniciar el caso</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s7_A_B_B" class="node">
+    <div class="card">
+      <div class="tag">NORA · Decisión final</div>
+      <div class="meta"><div class="pill">Momento: Minuto 30</div><div class="pill">SpO₂: 80% → 86%</div><div class="pill">Capnografía: baja</div></div>
+      <h2>Recuperación parcial y decisión operativa</h2>
+      <div class="text">Minuto 30. Se recupera ventilación parcial y reaparece capnografía débil. El operador pregunta si debe cancelar. El equipo espera tu decisión operativa.</div>
+      <div class="choices">
+        
+<a class="choice" href="#fin_A_B_B_A">A) Suspender temporalmente y priorizar estabilización completa; considerar cambio de entorno (por ejemplo, traslado a quirófano o recuperación avanzada).</a>
+<a class="choice" href="#fin_A_B_B_B">B) Continuar con vigilancia intensiva y manejo simultáneo, manteniendo disponibilidad de rescate y criterios de suspensión si reaparece deterioro.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="fin_A_B_B_A" class="node">
+    <div class="card">
+      <div class="tag">Debriefing · Retroalimentación final</div>
+      <div class="meta"><div class="pill">Recorrido: A-B-B-A</div><div class="pill">Enfoque: manejo de crisis</div><div class="pill">Enfoque: factor humano</div></div>
+      <h2>Cierre del escenario</h2>
+      <div class="text">Desenlace: se decide suspender temporalmente y priorizar estabilización completa, con consideración de cambio de entorno para manejo con mejor acceso y recursos.<br><br>Retroalimentación (manejo de crisis y factor humano):<br>• Preparación previa: acordar roles y verificar recursos antes de iniciar favorece coordinación y reduce latencia cuando aparece deterioro.<br>• Profundización titulada con vigilancia: cuando la inmovilidad es prioritaria, la seguridad depende de anticipar el rescate (oxígeno, succión, material y umbrales claros).<br>• Enfoque clínico principal con apoyo progresivo: puede ser eficaz, pero conviene evitar vacíos en monitorización/tiempos/comunicación; una instrucción breve y dirigida puede recuperar estructura sin frenar la intervención.<br>• Decisión operativa: suspender temporalmente y considerar cambio de entorno es una estrategia de control del riesgo cuando persiste fragilidad ventilatoria o limitaciones del entorno.<br>• Transferencia a la práctica: en NORA, el control del entorno (acceso a la vía aérea, disposición del equipo, manejo del ruido) es tan relevante como la intervención clínica.<br><br>Lectura de decisiones (compensaciones):<br>• Tiempo vs preparación: elegir preparación previa o en paralelo cambia la carga cognitiva disponible cuando ocurre la crisis.<br>• Inmovilidad vs ventilación: el equilibrio depende del momento del procedimiento y de la capacidad real de rescate inmediato.<br>• Continuidad vs cambio de plan/entorno: depende del riesgo residual y de la capacidad del equipo para sostener ventilación y hemodinamia.<br><br>Pregunta para pensamiento crítico:<br>¿Qué tres umbrales operativos (oxigenación, ventilación y condiciones del entorno/recursos) definirías para reanudar y para suspender, y cómo los comunicarías en menos de 15 segundos?</div>
+      <div class="choices">
+        <a class="choice" href="#inicio">Reiniciar el caso</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="fin_A_B_B_B" class="node">
+    <div class="card">
+      <div class="tag">Debriefing · Retroalimentación final</div>
+      <div class="meta"><div class="pill">Recorrido: A-B-B-B</div><div class="pill">Enfoque: manejo de crisis</div><div class="pill">Enfoque: factor humano</div></div>
+      <h2>Cierre del escenario</h2>
+      <div class="text">Desenlace: se decide continuar con vigilancia intensiva y manejo simultáneo, manteniendo disponibilidad de rescate y criterios explícitos de suspensión si reaparece deterioro.<br><br>Retroalimentación (manejo de crisis y factor humano):<br>• Preparación previa: acordar roles y verificar recursos antes de iniciar favorece coordinación y reduce latencia cuando aparece deterioro.<br>• Profundización titulada con vigilancia: cuando la inmovilidad es prioritaria, la seguridad depende de anticipar el rescate (oxígeno, succión, material y umbrales claros).<br>• Enfoque clínico principal con apoyo progresivo: puede ser eficaz, pero conviene evitar vacíos en monitorización/tiempos/comunicación; una instrucción breve y dirigida puede recuperar estructura sin frenar la intervención.<br>• Decisión operativa: continuar con vigilancia intensiva requiere redundancias (personal/material), ciclos cortos de reevaluación y un criterio explícito de suspensión ante cualquier deterioro.<br>• Transferencia a la práctica: en NORA, el control del entorno (acceso a la vía aérea, disposición del equipo, manejo del ruido) es tan relevante como la intervención clínica.<br><br>Lectura de decisiones (compensaciones):<br>• Tiempo vs preparación: elegir preparación previa o en paralelo cambia la carga cognitiva disponible cuando ocurre la crisis.<br>• Inmovilidad vs ventilación: el equilibrio depende del momento del procedimiento y de la capacidad real de rescate inmediato.<br>• Continuidad vs cambio de plan/entorno: depende del riesgo residual y de la capacidad del equipo para sostener ventilación y hemodinamia.<br><br>Pregunta para pensamiento crítico:<br>¿Qué tres umbrales operativos (oxigenación, ventilación y condiciones del entorno/recursos) definirías para reanudar y para suspender, y cómo los comunicarías en menos de 15 segundos?</div>
+      <div class="choices">
+        <a class="choice" href="#inicio">Reiniciar el caso</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s2_B_A" class="node">
+    <div class="card">
+      <div class="tag">NORA · Deterioro</div>
+      <div class="meta"><div class="pill">Momento: Minuto 21</div><div class="pill">Acceso: Limitado por arco en C</div><div class="pill">SpO₂: 86% → 82%</div></div>
+      <h2>Desaturación y acceso condicionado</h2>
+      <div class="text">Minuto 21. La saturación disminuye rápidamente y la capnografía se aplana de forma intermitente. El arco en C limita el acceso a la cabeza. El técnico comenta que retirar o mover el arco tarda aproximadamente 20 segundos.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s3_B_A_A">A) Solicitar pausa y retiro del arco en C para mejorar acceso; coordinar acciones simultáneas para manejo de ventilación.</a>
+<a class="choice" href="#s3_B_A_B">B) Iniciar maniobras de ventilación con el acceso disponible mientras el equipo prepara el retiro del arco en C.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s3_B_A_A" class="node">
+    <div class="card">
+      <div class="tag">NORA · Rescate</div>
+      <div class="meta"><div class="pill">Momento: Minuto 22</div><div class="pill">SpO₂: 79%–82%</div><div class="pill">Capnografía: baja</div></div>
+      <h2>Ventilación con mascarilla: resistencia y fuga</h2>
+      <div class="text">Minuto 22. Ya con mejor acceso. La ventilación con mascarilla presenta resistencia y fuga. La elevación torácica es discreta. El ambiente es ruidoso y la auscultación no es sencilla.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s4_B_A">A) Optimizar ventilación con pasos secuenciales: técnica a dos manos, adyuvante de vía aérea (si aplica), presión positiva y reevaluación inmediata.</a>
+<a class="choice" href="#s4_B_A_b">B) Preparar escalamiento a una estrategia más definitiva de vía aérea, manteniendo intentos de ventilación mientras se organiza el equipo.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s3_B_A_B" class="node">
+    <div class="card">
+      <div class="tag">NORA · Rescate</div>
+      <div class="meta"><div class="pill">Momento: Minuto 22</div><div class="pill">SpO₂: 79%–82%</div><div class="pill">Capnografía: baja</div></div>
+      <h2>Ventilación con mascarilla: resistencia y fuga</h2>
+      <div class="text">Minuto 22. Ya con mejor acceso. La ventilación con mascarilla presenta resistencia y fuga. La elevación torácica es discreta. El ambiente es ruidoso y la auscultación no es sencilla.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s4_B_A">A) Optimizar ventilación con pasos secuenciales: técnica a dos manos, adyuvante de vía aérea (si aplica), presión positiva y reevaluación inmediata.</a>
+<a class="choice" href="#s4_B_A_b">B) Preparar escalamiento a una estrategia más definitiva de vía aérea, manteniendo intentos de ventilación mientras se organiza el equipo.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s4_B_A" class="node">
+    <div class="card">
+      <div class="tag">NORA · Decisión operativa</div>
+      <div class="meta"><div class="pill">Momento: Minuto 23</div><div class="pill">SpO₂: 88% → 92%</div><div class="pill">Capnografía: presente</div></div>
+      <h2>Mejoría parcial y negociación para continuar</h2>
+      <div class="text">Minuto 23. La ventilación mejora parcialmente y la saturación asciende. El operador pregunta si pueden continuar porque están en un paso crítico del procedimiento.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s5_B_A">A) Definir condiciones para reanudar (ventilación y saturación sostenidas) y ajustes del plan antes de continuar.</a>
+<a class="choice" href="#s5_B_A_b">B) Reanudar con vigilancia estrecha, manteniendo disponibilidad inmediata de medidas de rescate si hay deterioro.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s4_B_A_b" class="node">
+    <div class="card">
+      <div class="tag">NORA · Decisión operativa</div>
+      <div class="meta"><div class="pill">Momento: Minuto 23</div><div class="pill">SpO₂: 88% → 92%</div><div class="pill">Capnografía: presente</div></div>
+      <h2>Mejoría parcial y negociación para continuar</h2>
+      <div class="text">Minuto 23. La ventilación mejora parcialmente y la saturación asciende. El operador pregunta si pueden continuar porque están en un paso crítico del procedimiento.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s5_B_A">A) Definir condiciones para reanudar (ventilación y saturación sostenidas) y ajustes del plan antes de continuar.</a>
+<a class="choice" href="#s5_B_A_b">B) Reanudar con vigilancia estrecha, manteniendo disponibilidad inmediata de medidas de rescate si hay deterioro.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s5_B_A" class="node">
+    <div class="card">
+      <div class="tag">NORA · Recurrencia</div>
+      <div class="meta"><div class="pill">Momento: Minuto 27</div><div class="pill">SpO₂: 92% → 88%</div><div class="pill">Capnografía: disminuye</div></div>
+      <h2>Reaparición de ronquido y deterioro ventilatorio</h2>
+      <div class="text">Minuto 27. Al reanudar, el paciente vuelve a roncar; la capnografía disminuye y la saturación cae nuevamente. El acceso sigue condicionado por el entorno.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s6_B_A">A) Modificar el plan hacia mayor control ventilatorio (por ejemplo, asegurar vía aérea con dispositivo supraglótico) con una pausa coordinada.</a>
+<a class="choice" href="#s6_B_A_b">B) Continuar con soporte ventilatorio intermitente y ajustes finos de sedación, manteniendo umbrales de intervención.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s5_B_A_b" class="node">
+    <div class="card">
+      <div class="tag">NORA · Recurrencia</div>
+      <div class="meta"><div class="pill">Momento: Minuto 27</div><div class="pill">SpO₂: 92% → 88%</div><div class="pill">Capnografía: disminuye</div></div>
+      <h2>Reaparición de ronquido y deterioro ventilatorio</h2>
+      <div class="text">Minuto 27. Al reanudar, el paciente vuelve a roncar; la capnografía disminuye y la saturación cae nuevamente. El acceso sigue condicionado por el entorno.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s6_B_A">A) Modificar el plan hacia mayor control ventilatorio (por ejemplo, asegurar vía aérea con dispositivo supraglótico) con una pausa coordinada.</a>
+<a class="choice" href="#s6_B_A_b">B) Continuar con soporte ventilatorio intermitente y ajustes finos de sedación, manteniendo umbrales de intervención.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s6_B_A" class="node">
+    <div class="card">
+      <div class="tag">NORA · Crisis</div>
+      <div class="meta"><div class="pill">Momento: Minuto 29</div><div class="pill">SpO₂: 78% → 74%</div><div class="pill">PANI: 82/48</div></div>
+      <h2>Deterioro combinado y desorganización del entorno</h2>
+      <div class="text">Minuto 29. El cuadro progresa: desaparece la capnografía y la saturación cae. La presión arterial disminuye. Varias personas hablan al mismo tiempo y el entorno se vuelve desorganizado.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s7_B_A_A">A) Estructurar la respuesta: declarar crisis, asignar roles y establecer comunicación dirigida con objetivos inmediatos.</a>
+<a class="choice" href="#s7_B_A_B">B) Enfocar la intervención clínica principal y solicitar apoyo conforme se va integrando el equipo.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s6_B_A_b" class="node">
+    <div class="card">
+      <div class="tag">NORA · Crisis</div>
+      <div class="meta"><div class="pill">Momento: Minuto 29</div><div class="pill">SpO₂: 78% → 74%</div><div class="pill">PANI: 82/48</div></div>
+      <h2>Deterioro combinado y desorganización del entorno</h2>
+      <div class="text">Minuto 29. El cuadro progresa: desaparece la capnografía y la saturación cae. La presión arterial disminuye. Varias personas hablan al mismo tiempo y el entorno se vuelve desorganizado.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s7_B_A_A">A) Estructurar la respuesta: declarar crisis, asignar roles y establecer comunicación dirigida con objetivos inmediatos.</a>
+<a class="choice" href="#s7_B_A_B">B) Enfocar la intervención clínica principal y solicitar apoyo conforme se va integrando el equipo.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s7_B_A_A" class="node">
+    <div class="card">
+      <div class="tag">NORA · Decisión final</div>
+      <div class="meta"><div class="pill">Momento: Minuto 30</div><div class="pill">SpO₂: 80% → 86%</div><div class="pill">Capnografía: baja</div></div>
+      <h2>Recuperación parcial y decisión operativa</h2>
+      <div class="text">Minuto 30. Se recupera ventilación parcial y reaparece capnografía débil. El operador pregunta si debe cancelar. El equipo espera tu decisión operativa.</div>
+      <div class="choices">
+        
+<a class="choice" href="#fin_B_A_A_A">A) Suspender temporalmente y priorizar estabilización completa; considerar cambio de entorno (por ejemplo, traslado a quirófano o recuperación avanzada).</a>
+<a class="choice" href="#fin_B_A_A_B">B) Continuar con vigilancia intensiva y manejo simultáneo, manteniendo disponibilidad de rescate y criterios de suspensión si reaparece deterioro.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="fin_B_A_A_A" class="node">
+    <div class="card">
+      <div class="tag">Debriefing · Retroalimentación final</div>
+      <div class="meta"><div class="pill">Recorrido: B-A-A-A</div><div class="pill">Enfoque: manejo de crisis</div><div class="pill">Enfoque: factor humano</div></div>
+      <h2>Cierre del escenario</h2>
+      <div class="text">Desenlace: se decide suspender temporalmente y priorizar estabilización completa, con consideración de cambio de entorno para manejo con mejor acceso y recursos.<br><br>Retroalimentación (manejo de crisis y factor humano):<br>• Preparación en paralelo: puede mantener flujo operativo, pero exige disciplina para asegurar que roles y recursos queden confirmados antes de que aumente la carga cognitiva.<br>• Priorización temprana de ventilación: detenerse para optimizar ventilación puede prevenir una escalada a rescate complejo en un entorno con acceso limitado.<br>• Organización del equipo durante la crisis: declarar crisis, asignar tareas y comunicación dirigida reduce ruido operativo y permite acciones simultáneas (ventilación, fármacos, monitorización y coordinación con el procedimiento).<br>• Decisión operativa: suspender temporalmente y considerar cambio de entorno es una estrategia de control del riesgo cuando persiste fragilidad ventilatoria o limitaciones del entorno.<br>• Transferencia a la práctica: en NORA, el control del entorno (acceso a la vía aérea, disposición del equipo, manejo del ruido) es tan relevante como la intervención clínica.<br><br>Lectura de decisiones (compensaciones):<br>• Tiempo vs preparación: elegir preparación previa o en paralelo cambia la carga cognitiva disponible cuando ocurre la crisis.<br>• Inmovilidad vs ventilación: el equilibrio depende del momento del procedimiento y de la capacidad real de rescate inmediato.<br>• Continuidad vs cambio de plan/entorno: depende del riesgo residual y de la capacidad del equipo para sostener ventilación y hemodinamia.<br><br>Pregunta para pensamiento crítico:<br>¿Qué tres umbrales operativos (oxigenación, ventilación y condiciones del entorno/recursos) definirías para reanudar y para suspender, y cómo los comunicarías en menos de 15 segundos?</div>
+      <div class="choices">
+        <a class="choice" href="#inicio">Reiniciar el caso</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="fin_B_A_A_B" class="node">
+    <div class="card">
+      <div class="tag">Debriefing · Retroalimentación final</div>
+      <div class="meta"><div class="pill">Recorrido: B-A-A-B</div><div class="pill">Enfoque: manejo de crisis</div><div class="pill">Enfoque: factor humano</div></div>
+      <h2>Cierre del escenario</h2>
+      <div class="text">Desenlace: se decide continuar con vigilancia intensiva y manejo simultáneo, manteniendo disponibilidad de rescate y criterios explícitos de suspensión si reaparece deterioro.<br><br>Retroalimentación (manejo de crisis y factor humano):<br>• Preparación en paralelo: puede mantener flujo operativo, pero exige disciplina para asegurar que roles y recursos queden confirmados antes de que aumente la carga cognitiva.<br>• Priorización temprana de ventilación: detenerse para optimizar ventilación puede prevenir una escalada a rescate complejo en un entorno con acceso limitado.<br>• Organización del equipo durante la crisis: declarar crisis, asignar tareas y comunicación dirigida reduce ruido operativo y permite acciones simultáneas (ventilación, fármacos, monitorización y coordinación con el procedimiento).<br>• Decisión operativa: continuar con vigilancia intensiva requiere redundancias (personal/material), ciclos cortos de reevaluación y un criterio explícito de suspensión ante cualquier deterioro.<br>• Transferencia a la práctica: en NORA, el control del entorno (acceso a la vía aérea, disposición del equipo, manejo del ruido) es tan relevante como la intervención clínica.<br><br>Lectura de decisiones (compensaciones):<br>• Tiempo vs preparación: elegir preparación previa o en paralelo cambia la carga cognitiva disponible cuando ocurre la crisis.<br>• Inmovilidad vs ventilación: el equilibrio depende del momento del procedimiento y de la capacidad real de rescate inmediato.<br>• Continuidad vs cambio de plan/entorno: depende del riesgo residual y de la capacidad del equipo para sostener ventilación y hemodinamia.<br><br>Pregunta para pensamiento crítico:<br>¿Qué tres umbrales operativos (oxigenación, ventilación y condiciones del entorno/recursos) definirías para reanudar y para suspender, y cómo los comunicarías en menos de 15 segundos?</div>
+      <div class="choices">
+        <a class="choice" href="#inicio">Reiniciar el caso</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s7_B_A_B" class="node">
+    <div class="card">
+      <div class="tag">NORA · Decisión final</div>
+      <div class="meta"><div class="pill">Momento: Minuto 30</div><div class="pill">SpO₂: 80% → 86%</div><div class="pill">Capnografía: baja</div></div>
+      <h2>Recuperación parcial y decisión operativa</h2>
+      <div class="text">Minuto 30. Se recupera ventilación parcial y reaparece capnografía débil. El operador pregunta si debe cancelar. El equipo espera tu decisión operativa.</div>
+      <div class="choices">
+        
+<a class="choice" href="#fin_B_A_B_A">A) Suspender temporalmente y priorizar estabilización completa; considerar cambio de entorno (por ejemplo, traslado a quirófano o recuperación avanzada).</a>
+<a class="choice" href="#fin_B_A_B_B">B) Continuar con vigilancia intensiva y manejo simultáneo, manteniendo disponibilidad de rescate y criterios de suspensión si reaparece deterioro.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="fin_B_A_B_A" class="node">
+    <div class="card">
+      <div class="tag">Debriefing · Retroalimentación final</div>
+      <div class="meta"><div class="pill">Recorrido: B-A-B-A</div><div class="pill">Enfoque: manejo de crisis</div><div class="pill">Enfoque: factor humano</div></div>
+      <h2>Cierre del escenario</h2>
+      <div class="text">Desenlace: se decide suspender temporalmente y priorizar estabilización completa, con consideración de cambio de entorno para manejo con mejor acceso y recursos.<br><br>Retroalimentación (manejo de crisis y factor humano):<br>• Preparación en paralelo: puede mantener flujo operativo, pero exige disciplina para asegurar que roles y recursos queden confirmados antes de que aumente la carga cognitiva.<br>• Priorización temprana de ventilación: detenerse para optimizar ventilación puede prevenir una escalada a rescate complejo en un entorno con acceso limitado.<br>• Enfoque clínico principal con apoyo progresivo: puede ser eficaz, pero conviene evitar vacíos en monitorización/tiempos/comunicación; una instrucción breve y dirigida puede recuperar estructura sin frenar la intervención.<br>• Decisión operativa: suspender temporalmente y considerar cambio de entorno es una estrategia de control del riesgo cuando persiste fragilidad ventilatoria o limitaciones del entorno.<br>• Transferencia a la práctica: en NORA, el control del entorno (acceso a la vía aérea, disposición del equipo, manejo del ruido) es tan relevante como la intervención clínica.<br><br>Lectura de decisiones (compensaciones):<br>• Tiempo vs preparación: elegir preparación previa o en paralelo cambia la carga cognitiva disponible cuando ocurre la crisis.<br>• Inmovilidad vs ventilación: el equilibrio depende del momento del procedimiento y de la capacidad real de rescate inmediato.<br>• Continuidad vs cambio de plan/entorno: depende del riesgo residual y de la capacidad del equipo para sostener ventilación y hemodinamia.<br><br>Pregunta para pensamiento crítico:<br>¿Qué tres umbrales operativos (oxigenación, ventilación y condiciones del entorno/recursos) definirías para reanudar y para suspender, y cómo los comunicarías en menos de 15 segundos?</div>
+      <div class="choices">
+        <a class="choice" href="#inicio">Reiniciar el caso</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="fin_B_A_B_B" class="node">
+    <div class="card">
+      <div class="tag">Debriefing · Retroalimentación final</div>
+      <div class="meta"><div class="pill">Recorrido: B-A-B-B</div><div class="pill">Enfoque: manejo de crisis</div><div class="pill">Enfoque: factor humano</div></div>
+      <h2>Cierre del escenario</h2>
+      <div class="text">Desenlace: se decide continuar con vigilancia intensiva y manejo simultáneo, manteniendo disponibilidad de rescate y criterios explícitos de suspensión si reaparece deterioro.<br><br>Retroalimentación (manejo de crisis y factor humano):<br>• Preparación en paralelo: puede mantener flujo operativo, pero exige disciplina para asegurar que roles y recursos queden confirmados antes de que aumente la carga cognitiva.<br>• Priorización temprana de ventilación: detenerse para optimizar ventilación puede prevenir una escalada a rescate complejo en un entorno con acceso limitado.<br>• Enfoque clínico principal con apoyo progresivo: puede ser eficaz, pero conviene evitar vacíos en monitorización/tiempos/comunicación; una instrucción breve y dirigida puede recuperar estructura sin frenar la intervención.<br>• Decisión operativa: continuar con vigilancia intensiva requiere redundancias (personal/material), ciclos cortos de reevaluación y un criterio explícito de suspensión ante cualquier deterioro.<br>• Transferencia a la práctica: en NORA, el control del entorno (acceso a la vía aérea, disposición del equipo, manejo del ruido) es tan relevante como la intervención clínica.<br><br>Lectura de decisiones (compensaciones):<br>• Tiempo vs preparación: elegir preparación previa o en paralelo cambia la carga cognitiva disponible cuando ocurre la crisis.<br>• Inmovilidad vs ventilación: el equilibrio depende del momento del procedimiento y de la capacidad real de rescate inmediato.<br>• Continuidad vs cambio de plan/entorno: depende del riesgo residual y de la capacidad del equipo para sostener ventilación y hemodinamia.<br><br>Pregunta para pensamiento crítico:<br>¿Qué tres umbrales operativos (oxigenación, ventilación y condiciones del entorno/recursos) definirías para reanudar y para suspender, y cómo los comunicarías en menos de 15 segundos?</div>
+      <div class="choices">
+        <a class="choice" href="#inicio">Reiniciar el caso</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s2_B_B" class="node">
+    <div class="card">
+      <div class="tag">NORA · Deterioro</div>
+      <div class="meta"><div class="pill">Momento: Minuto 21</div><div class="pill">Acceso: Limitado por arco en C</div><div class="pill">SpO₂: 86% → 82%</div></div>
+      <h2>Desaturación y acceso condicionado</h2>
+      <div class="text">Minuto 21. La saturación disminuye rápidamente y la capnografía se aplana de forma intermitente. El arco en C limita el acceso a la cabeza. El técnico comenta que retirar o mover el arco tarda aproximadamente 20 segundos.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s3_B_B_A">A) Solicitar pausa y retiro del arco en C para mejorar acceso; coordinar acciones simultáneas para manejo de ventilación.</a>
+<a class="choice" href="#s3_B_B_B">B) Iniciar maniobras de ventilación con el acceso disponible mientras el equipo prepara el retiro del arco en C.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s3_B_B_A" class="node">
+    <div class="card">
+      <div class="tag">NORA · Rescate</div>
+      <div class="meta"><div class="pill">Momento: Minuto 22</div><div class="pill">SpO₂: 79%–82%</div><div class="pill">Capnografía: baja</div></div>
+      <h2>Ventilación con mascarilla: resistencia y fuga</h2>
+      <div class="text">Minuto 22. Ya con mejor acceso. La ventilación con mascarilla presenta resistencia y fuga. La elevación torácica es discreta. El ambiente es ruidoso y la auscultación no es sencilla.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s4_B_B">A) Optimizar ventilación con pasos secuenciales: técnica a dos manos, adyuvante de vía aérea (si aplica), presión positiva y reevaluación inmediata.</a>
+<a class="choice" href="#s4_B_B_b">B) Preparar escalamiento a una estrategia más definitiva de vía aérea, manteniendo intentos de ventilación mientras se organiza el equipo.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s3_B_B_B" class="node">
+    <div class="card">
+      <div class="tag">NORA · Rescate</div>
+      <div class="meta"><div class="pill">Momento: Minuto 22</div><div class="pill">SpO₂: 79%–82%</div><div class="pill">Capnografía: baja</div></div>
+      <h2>Ventilación con mascarilla: resistencia y fuga</h2>
+      <div class="text">Minuto 22. Ya con mejor acceso. La ventilación con mascarilla presenta resistencia y fuga. La elevación torácica es discreta. El ambiente es ruidoso y la auscultación no es sencilla.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s4_B_B">A) Optimizar ventilación con pasos secuenciales: técnica a dos manos, adyuvante de vía aérea (si aplica), presión positiva y reevaluación inmediata.</a>
+<a class="choice" href="#s4_B_B_b">B) Preparar escalamiento a una estrategia más definitiva de vía aérea, manteniendo intentos de ventilación mientras se organiza el equipo.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s4_B_B" class="node">
+    <div class="card">
+      <div class="tag">NORA · Decisión operativa</div>
+      <div class="meta"><div class="pill">Momento: Minuto 23</div><div class="pill">SpO₂: 88% → 92%</div><div class="pill">Capnografía: presente</div></div>
+      <h2>Mejoría parcial y negociación para continuar</h2>
+      <div class="text">Minuto 23. La ventilación mejora parcialmente y la saturación asciende. El operador pregunta si pueden continuar porque están en un paso crítico del procedimiento.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s5_B_B">A) Definir condiciones para reanudar (ventilación y saturación sostenidas) y ajustes del plan antes de continuar.</a>
+<a class="choice" href="#s5_B_B_b">B) Reanudar con vigilancia estrecha, manteniendo disponibilidad inmediata de medidas de rescate si hay deterioro.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s4_B_B_b" class="node">
+    <div class="card">
+      <div class="tag">NORA · Decisión operativa</div>
+      <div class="meta"><div class="pill">Momento: Minuto 23</div><div class="pill">SpO₂: 88% → 92%</div><div class="pill">Capnografía: presente</div></div>
+      <h2>Mejoría parcial y negociación para continuar</h2>
+      <div class="text">Minuto 23. La ventilación mejora parcialmente y la saturación asciende. El operador pregunta si pueden continuar porque están en un paso crítico del procedimiento.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s5_B_B">A) Definir condiciones para reanudar (ventilación y saturación sostenidas) y ajustes del plan antes de continuar.</a>
+<a class="choice" href="#s5_B_B_b">B) Reanudar con vigilancia estrecha, manteniendo disponibilidad inmediata de medidas de rescate si hay deterioro.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s5_B_B" class="node">
+    <div class="card">
+      <div class="tag">NORA · Recurrencia</div>
+      <div class="meta"><div class="pill">Momento: Minuto 27</div><div class="pill">SpO₂: 92% → 88%</div><div class="pill">Capnografía: disminuye</div></div>
+      <h2>Reaparición de ronquido y deterioro ventilatorio</h2>
+      <div class="text">Minuto 27. Al reanudar, el paciente vuelve a roncar; la capnografía disminuye y la saturación cae nuevamente. El acceso sigue condicionado por el entorno.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s6_B_B">A) Modificar el plan hacia mayor control ventilatorio (por ejemplo, asegurar vía aérea con dispositivo supraglótico) con una pausa coordinada.</a>
+<a class="choice" href="#s6_B_B_b">B) Continuar con soporte ventilatorio intermitente y ajustes finos de sedación, manteniendo umbrales de intervención.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s5_B_B_b" class="node">
+    <div class="card">
+      <div class="tag">NORA · Recurrencia</div>
+      <div class="meta"><div class="pill">Momento: Minuto 27</div><div class="pill">SpO₂: 92% → 88%</div><div class="pill">Capnografía: disminuye</div></div>
+      <h2>Reaparición de ronquido y deterioro ventilatorio</h2>
+      <div class="text">Minuto 27. Al reanudar, el paciente vuelve a roncar; la capnografía disminuye y la saturación cae nuevamente. El acceso sigue condicionado por el entorno.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s6_B_B">A) Modificar el plan hacia mayor control ventilatorio (por ejemplo, asegurar vía aérea con dispositivo supraglótico) con una pausa coordinada.</a>
+<a class="choice" href="#s6_B_B_b">B) Continuar con soporte ventilatorio intermitente y ajustes finos de sedación, manteniendo umbrales de intervención.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s6_B_B" class="node">
+    <div class="card">
+      <div class="tag">NORA · Crisis</div>
+      <div class="meta"><div class="pill">Momento: Minuto 29</div><div class="pill">SpO₂: 78% → 74%</div><div class="pill">PANI: 82/48</div></div>
+      <h2>Deterioro combinado y desorganización del entorno</h2>
+      <div class="text">Minuto 29. El cuadro progresa: desaparece la capnografía y la saturación cae. La presión arterial disminuye. Varias personas hablan al mismo tiempo y el entorno se vuelve desorganizado.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s7_B_B_A">A) Estructurar la respuesta: declarar crisis, asignar roles y establecer comunicación dirigida con objetivos inmediatos.</a>
+<a class="choice" href="#s7_B_B_B">B) Enfocar la intervención clínica principal y solicitar apoyo conforme se va integrando el equipo.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s6_B_B_b" class="node">
+    <div class="card">
+      <div class="tag">NORA · Crisis</div>
+      <div class="meta"><div class="pill">Momento: Minuto 29</div><div class="pill">SpO₂: 78% → 74%</div><div class="pill">PANI: 82/48</div></div>
+      <h2>Deterioro combinado y desorganización del entorno</h2>
+      <div class="text">Minuto 29. El cuadro progresa: desaparece la capnografía y la saturación cae. La presión arterial disminuye. Varias personas hablan al mismo tiempo y el entorno se vuelve desorganizado.</div>
+      <div class="choices">
+        
+<a class="choice" href="#s7_B_B_A">A) Estructurar la respuesta: declarar crisis, asignar roles y establecer comunicación dirigida con objetivos inmediatos.</a>
+<a class="choice" href="#s7_B_B_B">B) Enfocar la intervención clínica principal y solicitar apoyo conforme se va integrando el equipo.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s7_B_B_A" class="node">
+    <div class="card">
+      <div class="tag">NORA · Decisión final</div>
+      <div class="meta"><div class="pill">Momento: Minuto 30</div><div class="pill">SpO₂: 80% → 86%</div><div class="pill">Capnografía: baja</div></div>
+      <h2>Recuperación parcial y decisión operativa</h2>
+      <div class="text">Minuto 30. Se recupera ventilación parcial y reaparece capnografía débil. El operador pregunta si debe cancelar. El equipo espera tu decisión operativa.</div>
+      <div class="choices">
+        
+<a class="choice" href="#fin_B_B_A_A">A) Suspender temporalmente y priorizar estabilización completa; considerar cambio de entorno (por ejemplo, traslado a quirófano o recuperación avanzada).</a>
+<a class="choice" href="#fin_B_B_A_B">B) Continuar con vigilancia intensiva y manejo simultáneo, manteniendo disponibilidad de rescate y criterios de suspensión si reaparece deterioro.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="fin_B_B_A_A" class="node">
+    <div class="card">
+      <div class="tag">Debriefing · Retroalimentación final</div>
+      <div class="meta"><div class="pill">Recorrido: B-B-A-A</div><div class="pill">Enfoque: manejo de crisis</div><div class="pill">Enfoque: factor humano</div></div>
+      <h2>Cierre del escenario</h2>
+      <div class="text">Desenlace: se decide suspender temporalmente y priorizar estabilización completa, con consideración de cambio de entorno para manejo con mejor acceso y recursos.<br><br>Retroalimentación (manejo de crisis y factor humano):<br>• Preparación en paralelo: puede mantener flujo operativo, pero exige disciplina para asegurar que roles y recursos queden confirmados antes de que aumente la carga cognitiva.<br>• Profundización titulada con vigilancia: cuando la inmovilidad es prioritaria, la seguridad depende de anticipar el rescate (oxígeno, succión, material y umbrales claros).<br>• Organización del equipo durante la crisis: declarar crisis, asignar tareas y comunicación dirigida reduce ruido operativo y permite acciones simultáneas (ventilación, fármacos, monitorización y coordinación con el procedimiento).<br>• Decisión operativa: suspender temporalmente y considerar cambio de entorno es una estrategia de control del riesgo cuando persiste fragilidad ventilatoria o limitaciones del entorno.<br>• Transferencia a la práctica: en NORA, el control del entorno (acceso a la vía aérea, disposición del equipo, manejo del ruido) es tan relevante como la intervención clínica.<br><br>Lectura de decisiones (compensaciones):<br>• Tiempo vs preparación: elegir preparación previa o en paralelo cambia la carga cognitiva disponible cuando ocurre la crisis.<br>• Inmovilidad vs ventilación: el equilibrio depende del momento del procedimiento y de la capacidad real de rescate inmediato.<br>• Continuidad vs cambio de plan/entorno: depende del riesgo residual y de la capacidad del equipo para sostener ventilación y hemodinamia.<br><br>Pregunta para pensamiento crítico:<br>¿Qué tres umbrales operativos (oxigenación, ventilación y condiciones del entorno/recursos) definirías para reanudar y para suspender, y cómo los comunicarías en menos de 15 segundos?</div>
+      <div class="choices">
+        <a class="choice" href="#inicio">Reiniciar el caso</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="fin_B_B_A_B" class="node">
+    <div class="card">
+      <div class="tag">Debriefing · Retroalimentación final</div>
+      <div class="meta"><div class="pill">Recorrido: B-B-A-B</div><div class="pill">Enfoque: manejo de crisis</div><div class="pill">Enfoque: factor humano</div></div>
+      <h2>Cierre del escenario</h2>
+      <div class="text">Desenlace: se decide continuar con vigilancia intensiva y manejo simultáneo, manteniendo disponibilidad de rescate y criterios explícitos de suspensión si reaparece deterioro.<br><br>Retroalimentación (manejo de crisis y factor humano):<br>• Preparación en paralelo: puede mantener flujo operativo, pero exige disciplina para asegurar que roles y recursos queden confirmados antes de que aumente la carga cognitiva.<br>• Profundización titulada con vigilancia: cuando la inmovilidad es prioritaria, la seguridad depende de anticipar el rescate (oxígeno, succión, material y umbrales claros).<br>• Organización del equipo durante la crisis: declarar crisis, asignar tareas y comunicación dirigida reduce ruido operativo y permite acciones simultáneas (ventilación, fármacos, monitorización y coordinación con el procedimiento).<br>• Decisión operativa: continuar con vigilancia intensiva requiere redundancias (personal/material), ciclos cortos de reevaluación y un criterio explícito de suspensión ante cualquier deterioro.<br>• Transferencia a la práctica: en NORA, el control del entorno (acceso a la vía aérea, disposición del equipo, manejo del ruido) es tan relevante como la intervención clínica.<br><br>Lectura de decisiones (compensaciones):<br>• Tiempo vs preparación: elegir preparación previa o en paralelo cambia la carga cognitiva disponible cuando ocurre la crisis.<br>• Inmovilidad vs ventilación: el equilibrio depende del momento del procedimiento y de la capacidad real de rescate inmediato.<br>• Continuidad vs cambio de plan/entorno: depende del riesgo residual y de la capacidad del equipo para sostener ventilación y hemodinamia.<br><br>Pregunta para pensamiento crítico:<br>¿Qué tres umbrales operativos (oxigenación, ventilación y condiciones del entorno/recursos) definirías para reanudar y para suspender, y cómo los comunicarías en menos de 15 segundos?</div>
+      <div class="choices">
+        <a class="choice" href="#inicio">Reiniciar el caso</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="s7_B_B_B" class="node">
+    <div class="card">
+      <div class="tag">NORA · Decisión final</div>
+      <div class="meta"><div class="pill">Momento: Minuto 30</div><div class="pill">SpO₂: 80% → 86%</div><div class="pill">Capnografía: baja</div></div>
+      <h2>Recuperación parcial y decisión operativa</h2>
+      <div class="text">Minuto 30. Se recupera ventilación parcial y reaparece capnografía débil. El operador pregunta si debe cancelar. El equipo espera tu decisión operativa.</div>
+      <div class="choices">
+        
+<a class="choice" href="#fin_B_B_B_A">A) Suspender temporalmente y priorizar estabilización completa; considerar cambio de entorno (por ejemplo, traslado a quirófano o recuperación avanzada).</a>
+<a class="choice" href="#fin_B_B_B_B">B) Continuar con vigilancia intensiva y manejo simultáneo, manteniendo disponibilidad de rescate y criterios de suspensión si reaparece deterioro.</a>
+<a class="choice" href="#inicio">Reiniciar / volver al inicio</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="fin_B_B_B_A" class="node">
+    <div class="card">
+      <div class="tag">Debriefing · Retroalimentación final</div>
+      <div class="meta"><div class="pill">Recorrido: B-B-B-A</div><div class="pill">Enfoque: manejo de crisis</div><div class="pill">Enfoque: factor humano</div></div>
+      <h2>Cierre del escenario</h2>
+      <div class="text">Desenlace: se decide suspender temporalmente y priorizar estabilización completa, con consideración de cambio de entorno para manejo con mejor acceso y recursos.<br><br>Retroalimentación (manejo de crisis y factor humano):<br>• Preparación en paralelo: puede mantener flujo operativo, pero exige disciplina para asegurar que roles y recursos queden confirmados antes de que aumente la carga cognitiva.<br>• Profundización titulada con vigilancia: cuando la inmovilidad es prioritaria, la seguridad depende de anticipar el rescate (oxígeno, succión, material y umbrales claros).<br>• Enfoque clínico principal con apoyo progresivo: puede ser eficaz, pero conviene evitar vacíos en monitorización/tiempos/comunicación; una instrucción breve y dirigida puede recuperar estructura sin frenar la intervención.<br>• Decisión operativa: suspender temporalmente y considerar cambio de entorno es una estrategia de control del riesgo cuando persiste fragilidad ventilatoria o limitaciones del entorno.<br>• Transferencia a la práctica: en NORA, el control del entorno (acceso a la vía aérea, disposición del equipo, manejo del ruido) es tan relevante como la intervención clínica.<br><br>Lectura de decisiones (compensaciones):<br>• Tiempo vs preparación: elegir preparación previa o en paralelo cambia la carga cognitiva disponible cuando ocurre la crisis.<br>• Inmovilidad vs ventilación: el equilibrio depende del momento del procedimiento y de la capacidad real de rescate inmediato.<br>• Continuidad vs cambio de plan/entorno: depende del riesgo residual y de la capacidad del equipo para sostener ventilación y hemodinamia.<br><br>Pregunta para pensamiento crítico:<br>¿Qué tres umbrales operativos (oxigenación, ventilación y condiciones del entorno/recursos) definirías para reanudar y para suspender, y cómo los comunicarías en menos de 15 segundos?</div>
+      <div class="choices">
+        <a class="choice" href="#inicio">Reiniciar el caso</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="fin_B_B_B_B" class="node">
+    <div class="card">
+      <div class="tag">Debriefing · Retroalimentación final</div>
+      <div class="meta"><div class="pill">Recorrido: B-B-B-B</div><div class="pill">Enfoque: manejo de crisis</div><div class="pill">Enfoque: factor humano</div></div>
+      <h2>Cierre del escenario</h2>
+      <div class="text">Desenlace: se decide continuar con vigilancia intensiva y manejo simultáneo, manteniendo disponibilidad de rescate y criterios explícitos de suspensión si reaparece deterioro.<br><br>Retroalimentación (manejo de crisis y factor humano):<br>• Preparación en paralelo: puede mantener flujo operativo, pero exige disciplina para asegurar que roles y recursos queden confirmados antes de que aumente la carga cognitiva.<br>• Profundización titulada con vigilancia: cuando la inmovilidad es prioritaria, la seguridad depende de anticipar el rescate (oxígeno, succión, material y umbrales claros).<br>• Enfoque clínico principal con apoyo progresivo: puede ser eficaz, pero conviene evitar vacíos en monitorización/tiempos/comunicación; una instrucción breve y dirigida puede recuperar estructura sin frenar la intervención.<br>• Decisión operativa: continuar con vigilancia intensiva requiere redundancias (personal/material), ciclos cortos de reevaluación y un criterio explícito de suspensión ante cualquier deterioro.<br>• Transferencia a la práctica: en NORA, el control del entorno (acceso a la vía aérea, disposición del equipo, manejo del ruido) es tan relevante como la intervención clínica.<br><br>Lectura de decisiones (compensaciones):<br>• Tiempo vs preparación: elegir preparación previa o en paralelo cambia la carga cognitiva disponible cuando ocurre la crisis.<br>• Inmovilidad vs ventilación: el equilibrio depende del momento del procedimiento y de la capacidad real de rescate inmediato.<br>• Continuidad vs cambio de plan/entorno: depende del riesgo residual y de la capacidad del equipo para sostener ventilación y hemodinamia.<br><br>Pregunta para pensamiento crítico:<br>¿Qué tres umbrales operativos (oxigenación, ventilación y condiciones del entorno/recursos) definirías para reanudar y para suspender, y cómo los comunicarías en menos de 15 segundos?</div>
+      <div class="choices">
+        <a class="choice" href="#inicio">Reiniciar el caso</a>
+      </div>
+    </div>
+  </section>
+
+</div></body></html>
