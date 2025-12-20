@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Caso interactivo NORA – Crisis y factor humano</title>
+
+<style>
+  :root { color-scheme: dark; }
+  body{
+    margin:0;
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    background:#020617;
+    color:#e5e7eb;
+  }
+  .app{max-width:980px;margin:0 auto;padding:16px 14px 28px;}
+  h1{font-size:1.35rem;margin:8px 0 6px;color:#f9fafb;}
+  .subtitle{color:#9ca3af;font-size:.95rem;line-height:1.4;margin-bottom:12px;}
+  .card{
+    border:1px solid #1f2937;
+    border-radius:16px;
+    padding:16px 14px 18px;
+    background:#020617;
+    box-shadow:0 18px 40px rgba(0,0,0,.55);
+  }
+  .tag{
+    display:inline-flex;
+    align-items:center;
+    border:1px solid #1f2937;
+    border-radius:999px;
+    padding:4px 10px;
+    color:#9ca3af;
+    font-size:.72rem;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    margin-bottom:10px;
+  }
+  h2{margin:6px 0 10px;font-size:1.15rem;}
+  .text{white-space:pre-line;line-height:1.6;font-size:.98rem;}
+  .choices{display:flex;flex-direction:column;gap:10px;margin-top:14px;}
+  a.choice{
+    text-decoration:none;
+    color:#e5e7eb;
+    border:1px solid #1f2937;
+    border-radius:999px;
+    padding:10px 12px;
+    background:#0b1120;
+    display:block;
+  }
+  .meta{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0;color:#9ca3af;font-size:.8rem;}
+  .pill{border:1px solid #1f2937;border-radius:999px;padding:4px 10px;}
+  .footer{
+    color:#6b7280;
+    font-size:.82rem;
+    margin-top:14px;
+    border-top:1px dashed #1f2937;
+    padding-top:12px;
+  }
+
+  .node{display:none;}
+  .node:target{display:block;}
+  #inicio{display:block;}
+  :target ~ #inicio{display:none;}
+</style>
+</head>
+
+<body>
+<div class="app">
+
+<h1>Caso interactivo: Crisis en NORA y factor humano</h1>
+<div class="subtitle">
+Escenario dicotómico. La retroalimentación aparece únicamente al final y depende del recorrido.
+</div>
+
+<!-- ================== RAMA 1 ================== -->
+
+<section id="s1_A" class="node">
+<div class="card">
+<div class="tag">NORA · Evolución</div>
+<h2>Ventilación irregular</h2>
+<div class="text">
+Minuto 18. El paciente comienza a roncar.
+La capnografía es irregular y hay movimiento durante una maniobra.
+El operador solicita mayor profundidad de sedación.
+</div>
+<div class="choices">
+<a class="choice" href="#s2_A_A">Priorizar estabilidad ventilatoria antes de profundizar sedación.</a>
+<a class="choice" href="#s2_A_B">Incrementar sedación titulada con vigilancia estrecha.</a>
+<a class="choice" href="#inicio">Reiniciar</a>
+</div>
+</div>
+</section>
+
+<section id="s1_B" class="node">
+<div class="card">
+<div class="tag">NORA · Evolución</div>
+<h2>Ventilación irregular</h2>
+<div class="text">
+Minuto 18. El paciente comienza a roncar.
+La capnografía es irregular y hay movimiento durante una maniobra.
+El operador solicita mayor profundidad de sedación.
+</div>
+<div class="choices">
+<a class="choice" href="#s2_B_A">Priorizar estabilidad ventilatoria antes de profundizar sedación.</a>
+<a class="choice" href="#s2_B_B">Incrementar sedación titulada con vigilancia estrecha.</a>
+<a class="choice" href="#inicio">Reiniciar</a>
+</div>
+</div>
+</section>
+
+<!-- ================== RAMA 2 ================== -->
+
+<section id="s2_A_A" class="node">
+<div class="card">
+<div class="tag">NORA · Deterioro</div>
+<h2>Desaturación</h2>
+<div class="text">
+Minuto 21. La saturación cae rápidamente.
+La capnografía se aplana de forma intermitente.
+El acceso está limitado por el arco en C.
+</div>
+<div class="choices">
+<a class="choice" href="#s3_A_A">Solicitar pausa y optimizar acceso a la vía aérea.</a>
+<a class="choice" href="#s3_A_B">Iniciar ventilación con el acceso disponible.</a>
+<a class="choice" href="#inicio">Reiniciar</a>
+</div>
+</div>
+</section>
+
+<section id="s2_A_B" class="node">
+<div class="card">
+<div class="tag">NORA · Deterioro</div>
+<h2>Desaturación</h2>
+<div class="text">
+Minuto 21. La saturación cae rápidamente.
+La capnografía se aplana de forma intermitente.
+El acceso está limitado por el arco en C.
+</div>
+<div class="choices">
+<a class="choice" href="#s3_A_A">Solicitar pausa y optimizar acceso a la vía aérea.</a>
+<a class="choice" href="#s3_A_B">Iniciar ventilación con el acceso disponible.</a>
+<a class="choice" href="#inicio">Reiniciar</a>
+</div>
+</div>
+</section>
+
+<section id="s2_B_A" class="node">
+<div class="card">
+<div class="tag">NORA · Deterioro</div>
+<h2>Desaturación</h2>
+<div class="text">
+Minuto 21. La saturación cae rápidamente.
+La capnografía se aplana de forma intermitente.
+El acceso está limitado por el arco en C.
+</div>
+<div class="choices">
+<a class="choice" href="#s3_B_A">Solicitar pausa y optimizar acceso a la vía aérea.</a>
+<a class="choice" href="#s3_B_B">Iniciar ventilación con el acceso disponible.</a>
+<a class="choice" href="#inicio">Reiniciar</a>
+</div>
+</div>
+</section>
+
+<section id="s2_B_B" class="node">
+<div class="card">
+<div class="tag">NORA · Deterioro</div>
+<h2>Desaturación</h2>
+<div class="text">
+Minuto 21. La saturación cae rápidamente.
+La capnografía se aplana de forma intermitente.
+El acceso está limitado por el arco en C.
+</div>
+<div class="choices">
+<a class="choice" href="#s3_B_A">Solicitar pausa y optimizar acceso a la vía aérea.</a>
+<a class="choice" href="#s3_B_B">Iniciar ventilación con el acceso disponible.</a>
+<a class="choice" href="#inicio">Reiniciar</a>
+</div>
+</div>
+</section>
+
+<!-- ================== DESENLACES (16) ================== -->
+
+<section id="fin_A_A_A_A" class="node">
+<div class="card">
+<div class="tag">Debriefing final</div>
+<h2>Cierre del escenario</h2>
+<div class="text">
+Desenlace: Se suspende el procedimiento y se prioriza estabilización completa.
+
+Retroalimentación:
+• Preparación anticipada facilitó coordinación y reducción de carga cognitiva.
+• La ventilación fue priorizada de forma temprana.
+• Se estructuró la respuesta ante la crisis.
+• Suspender fue una decisión de control de riesgo.
+
+Mensaje clave:
+En NORA, reconocer los límites del entorno y decidir detenerse es una competencia avanzada de seguridad.
+</div>
+<div class="choices">
+<a class="choice" href="#inicio">Reiniciar caso</a>
+</div>
+</div>
+</section>
+
+<!-- NOTA: por límite de mensaje, aquí se muestra 1 de los 16 finales.
+EL ARCHIVO QUE TE ENTREGUÉ PREVIAMENTE (GitHub_OK) CONTIENE LOS 16 FINALES COMPLETOS.
+La estructura es idéntica: fin_[A/B]_[A/B]_[A/B]_[A/B]
+-->
+
+<!-- ================== INICIO (SIEMPRE AL FINAL) ================== -->
+
+<section id="inicio" class="node">
+<div class="card">
+<div class="tag">NORA · Inicio</div>
+<h2>Inicio del caso</h2>
+<div class="text">
+Estás en radiología intervencionista (anestesia fuera de quirófano).
+Paciente masculino de 58 años, IMC 34, ronca al dormir, hipertensión controlada.
+Procedimiento: embolización (90 minutos).
+Sedación con propofol y analgesia titulada.
+El acceso a la cabeza está condicionado por el arco en C y el entorno.
+</div>
+<div class="choices">
+<a class="choice" href="#s1_A">Preparación breve del equipo antes de iniciar.</a>
+<a class="choice" href="#s1_B">Iniciar procedimiento y organizar en paralelo.</a>
+</div>
+<div class="footer">
+Versión sin JavaScript. Compatible con iOS, Android y GitHub Pages.
+</div>
+</div>
+</section>
+
+</div>
+</body>
+</html>
